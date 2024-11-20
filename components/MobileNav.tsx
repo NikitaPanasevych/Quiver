@@ -10,16 +10,17 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import { signOutUser } from '@/lib/actions/user.actions';
+import FileUploader from './FileUploader';
 
 interface Props {
-	ownerId: string;
+	$id: string;
 	accountId: string;
 	fullName: string;
 	email: string;
 	avatar: string;
 }
 
-const MobileNav = ({ ownerId, accountId, fullName, email, avatar }: Props) => {
+const MobileNav = ({ $id: ownerId, accountId, fullName, email, avatar }: Props) => {
 	const [open, setOpen] = useState(false);
 	const pathname = usePathname();
 
@@ -61,7 +62,7 @@ const MobileNav = ({ ownerId, accountId, fullName, email, avatar }: Props) => {
 					</nav>
 					<Separator className=" my-5 bg-light-200/20" />
 					<div className=" flex flex-col gap-5 pb-5 justify-between">
-						FileUploader
+						<FileUploader ownerId={ownerId} accountId={accountId} />
 						<Button
 							className=" mobile-sign-out-button"
 							type="submit"

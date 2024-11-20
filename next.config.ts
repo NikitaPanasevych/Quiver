@@ -1,6 +1,11 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+	exporimental: {
+		serverActions: {
+			bodySizeLimit: '100mb',
+		},
+	},
 	images: {
 		remotePatterns: [
 			{
@@ -9,7 +14,7 @@ const nextConfig: NextConfig = {
 			},
 			{
 				protocol: 'https',
-				hostname: 'cloud-appwrite.io',
+				hostname: 'cloud.appwrite.io',
 			},
 		],
 	},
