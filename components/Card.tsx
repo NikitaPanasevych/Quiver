@@ -11,7 +11,7 @@ const Card = ({ file }: { file: Models.Document }) => {
 		<Link href={file.url} target="_blank" className=" file-card">
 			<div className=" flex justify-between">
 				<Thumbnail type={file.type} extension={file.extension} url={file.url} />
-				<div className="">
+				<div className=" flex flex-col items-end justify-between">
 					<ActionDropdown file={file} />
 					<p className=" body-1">{convertFileSize(file.size)}</p>
 				</div>
