@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiver Storage 🗄️
 
-## Getting Started
+## Overview
+Quiver Storage is a modern file management and sharing platform built with Next.js 15 and Appwrite, offering seamless file organization and collaboration.
 
-First, run the development server:
+## ⚙️ Tech Stack
+- React 19
+- Next.js 15
+- Appwrite
+- TailwindCSS
+- ShadCN
+- TypeScript
 
+## 🔋 Features
+- **User Authentication**: Secure signup, login, and logout with Appwrite
+- **File Uploads**: Support for documents, images, videos, and audio
+- **File Management**: Browse, view, rename, and delete files
+- **File Sharing**: Easy file sharing and collaboration
+- **Dashboard**: Insights into storage usage and recent uploads
+- **Global Search**: Quick file discovery
+- **Sorting Options**: Filter files by date, name, or size
+- **Responsive Design**: Modern, minimalist UI across devices
+
+## Prerequisites
+- Node.js
+- Appwrite account
+- Docker (optional)
+
+## Installation
 ```bash
+# Clone repository
+git clone https://github.com/NikitaPanasevych/Quiver.git
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
+Configure `.env` with:
+- `NEXT_PUBLIC_APPWRITE_ENDPOINT`
+- `NEXT_PUBLIC_PROJECT_ID`
+- Authentication credentials
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Create pull request
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## License
+MIT License
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Would you like me to modify any part of the README?
